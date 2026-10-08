@@ -1,0 +1,43 @@
+model,metric,observed_mean,target,direction,status
+MLP,UADR,1.0,1.0,>=,PASS
+MLP,Macro-F1,0.8861614348599417,0.73,>=,PASS
+MLP,Hidden Macro Recall,0.9985935302390999,0.7,>=,PASS
+MLP,Land Recall,1.0,0.9,>=,PASS
+MLP,Teardrop Recall,0.9957805907172995,0.9,>=,PASS
+MLP,ACKPFlood Precision,0.8468999848618367,0.6,>=,PASS
+MLP,ACKPFlood Recall,1.0,0.6,>=,PASS
+MLP,ACKFlood Recall,0.9213333333333334,0.65,>=,PASS
+MLP,ACK Pair Macro-F1,0.9329718404212084,0.65,>=,PASS
+MLP,Unknown Query Yield,0.2711111111111111,0.15,>=,PASS
+MLP,Representation Redundancy,0.17111362806624839,0.6,<,PASS
+MLP,Binary F1,0.9947060862495608,0.98,>=,PASS
+MLP,Accuracy,0.8942969518190758,0.8,>=,PASS
+MLP,Labels to Full Discovery,25.333333333333332,300.0,<=,PASS
+RandomForest,UADR,1.0,1.0,>=,PASS
+RandomForest,Macro-F1,0.9938238629671683,0.73,>=,PASS
+RandomForest,Hidden Macro Recall,0.9977666108319375,0.7,>=,PASS
+RandomForest,Land Recall,1.0,0.9,>=,PASS
+RandomForest,Teardrop Recall,1.0,0.9,>=,PASS
+RandomForest,ACKPFlood Precision,1.0,0.6,>=,PASS
+RandomForest,ACKPFlood Recall,0.9932998324958123,0.6,>=,PASS
+RandomForest,ACKFlood Recall,0.9853333333333333,0.65,>=,PASS
+RandomForest,ACK Pair Macro-F1,0.9914787066308186,0.65,>=,PASS
+RandomForest,Unknown Query Yield,0.31666666666666665,0.15,>=,PASS
+RandomForest,Representation Redundancy,0.177552355453372,0.6,<,PASS
+RandomForest,Binary F1,0.9976743622738414,0.98,>=,PASS
+RandomForest,Accuracy,0.9930186823992133,0.8,>=,PASS
+RandomForest,Labels to Full Discovery,57.333333333333336,300.0,<=,PASS
+XGBoost,UADR,1.0,1.0,>=,PASS
+XGBoost,Macro-F1,0.9948302663282217,0.73,>=,PASS
+XGBoost,Hidden Macro Recall,1.0,0.7,>=,PASS
+XGBoost,Land Recall,1.0,0.9,>=,PASS
+XGBoost,Teardrop Recall,1.0,0.9,>=,PASS
+XGBoost,ACKPFlood Precision,1.0,0.6,>=,PASS
+XGBoost,ACKPFlood Recall,1.0,0.6,>=,PASS
+XGBoost,ACKFlood Recall,0.9876666666666667,0.65,>=,PASS
+XGBoost,ACK Pair Macro-F1,0.9955673955448207,0.65,>=,PASS
+XGBoost,Unknown Query Yield,0.33,0.15,>=,PASS
+XGBoost,Representation Redundancy,0.6769730018244849,0.6,<,BELOW TARGET
+XGBoost,Binary F1,0.9977304589056265,0.98,>=,PASS
+XGBoost,Accuracy,0.9940511307767945,0.8,>=,PASS
+XGBoost,Labels to Full Discovery,129.0,300.0,<=,PASS

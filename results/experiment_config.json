@@ -1,0 +1,85 @@
+{
+  "run_mode": "research",
+  "models": [
+    "MLP",
+    "RandomForest",
+    "XGBoost"
+  ],
+  "strategies": [
+    "random",
+    "uncertainty",
+    "hybrid_open_set"
+  ],
+  "seeds": [
+    42,
+    2026,
+    31415
+  ],
+  "initial_per_known_class": 50,
+  "label_budget": 300,
+  "query_batch_size": 25,
+  "hidden_classes": [
+    "land",
+    "ackpflood",
+    "teardrop"
+  ],
+  "known_classes": [
+    "ackflood",
+    "benign",
+    "fraggle",
+    "icmpbig",
+    "icmpflood",
+    "pingofdeath",
+    "routeip",
+    "smurf",
+    "syn",
+    "synflood",
+    "tcp",
+    "tcpall",
+    "tcpfin1",
+    "winnuke"
+  ],
+  "hybrid_quotas": {
+    "uncertainty": 8,
+    "novelty": 7,
+    "expansion": 7,
+    "random": 3
+  },
+  "strict_cosine_similarity_threshold": 0.6,
+  "score_weights": {
+    "uncertainty": 0.4,
+    "novelty": 0.4,
+    "density": 0.2
+  },
+  "MLP": {
+    "hidden_units": [
+      256,
+      128
+    ],
+    "embedding_dim": 64,
+    "dropout": 0.25,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "focal_gamma": 1.0,
+    "mc_passes": 15
+  },
+  "RandomForest": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "max_features": "sqrt",
+    "criterion": "gini"
+  },
+  "XGBoost": {
+    "n_estimators": 250,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9
+  },
+  "class_weighting": {
+    "effective_number_beta": 0.999,
+    "max_class_weight": 4.0
+  },
+  "primary_split": "split_A_comparable",
+  "external_split": "split_B_external"
+}

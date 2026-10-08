@@ -1,0 +1,13 @@
+model,acquisition_channel,queries,hidden_queries,hidden_yield
+MLP,expansion,231,201,0.8701298701298701
+MLP,novelty,273,17,0.06227106227106227
+MLP,random,108,0,0.0
+MLP,uncertainty,288,26,0.09027777777777778
+RandomForest,expansion,231,227,0.9826839826839827
+RandomForest,novelty,273,19,0.0695970695970696
+RandomForest,random,108,2,0.018518518518518517
+RandomForest,uncertainty,288,37,0.1284722222222222
+XGBoost,expansion,231,231,1.0
+XGBoost,novelty,273,25,0.09157509157509157
+XGBoost,random,108,0,0.0
+XGBoost,uncertainty,288,41,0.1423611111111111

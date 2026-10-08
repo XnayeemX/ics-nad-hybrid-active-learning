@@ -1,0 +1,9 @@
+criterion,model,value
+Highest Hybrid Accuracy,XGBoost,0.9940511307767945
+Highest Hybrid Macro-F1,XGBoost,0.9948302663282217
+Highest Hidden Macro Recall,XGBoost,1.0
+Highest Unknown Query Yield,XGBoost,0.33
+Fewest Labels to Full Discovery,MLP,25.333333333333332
+Highest ACK Pair Macro-F1,XGBoost,0.9955673955448207
+Lowest Model-Specific Representation Redundancy,MLP,0.17111362806624839
+Highest Binary F1,XGBoost,0.9977304589056265

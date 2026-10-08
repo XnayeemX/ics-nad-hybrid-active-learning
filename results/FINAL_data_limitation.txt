@@ -1,0 +1,1 @@
+land, ackpflood, and teardrop each have only one independent source capture in the supplied dataset. Therefore, the experiment evaluates their discovery and subsequent learning within the Active Learning setting, but cannot establish source-file-disjoint generalization for those hidden classes from this dataset alone.
