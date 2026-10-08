@@ -1,13 +1,11 @@
 # Trained Models
 
-The files supplied for this GitHub-ready package did **not** include serialized
-final MLP, Random Forest, or XGBoost model binaries.
+Serialized final model binaries for MLP, Random Forest, and XGBoost are not included in this repository.
 
-The complete training and Active Learning implementation is contained in:
+The complete training, Active Learning, and evaluation implementation is provided in:
 
 ```text
 notebooks/01_hybrid_active_learning_comparison.ipynb
-```
 
 Running the notebook in `research` mode reproduces the final model-training
 process for:
@@ -24,10 +22,21 @@ across the three experiment seeds:
 31415
 ```
 
+## Reproducing the Models
+The included final dataset and notebook are sufficient to retrain the models using the same documented experiment configuration.
+The final model table is available at:
+
+```text
+data/ics_nad_model_table_v3.parquet
+```
+```text
+notebooks/01_hybrid_active_learning_comparison.ipynb
+```
+
 ## Model Artifact Policy
 
-If serialized models are published later, place them in this directory or host
-them externally and add the public download link here.
+Pretrained serialized model files are not currently distributed with this repository.
+If pretrained model artifacts are published separately in the future, they can be stored in this directory or hosted externally with a public download link.
 
 Recommended structure:
 
@@ -39,8 +48,4 @@ models/
 └── README.md
 ```
 
-For a paper submission, do not claim that pretrained model binaries are
-included unless the actual files or a working public download link are added.
-
-The notebook is sufficient to retrain the models from the included final model
-table, but retraining is not the same as distributing pretrained binaries.
+Retraining the models from the supplied notebook and dataset is not equivalent to distributing pretrained model binaries. This repository therefore provides the complete reproducible training procedure rather than claiming that pretrained model files are included.
