@@ -117,7 +117,30 @@ ics-nad-hybrid-active-learning/
 │   └── README.md
 │
 └── results/
-    └── README.md
+    ├── README.md
+    │
+    ├── FINAL_paper_ready_hybrid_model_comparison.csv
+    ├── FINAL_hybrid_cross_model_comparison.csv
+    ├── FINAL_hybrid_vs_random_by_model.csv
+    ├── FINAL_metric_leaders.csv
+    ├── FINAL_target_checklist_all_models.csv
+    ├── FINAL_hybrid_channel_effectiveness.csv
+    ├── FINAL_version_B_cross_model.csv
+    │
+    ├── all_models_final_summary_by_seed.csv
+    ├── all_models_final_per_class.csv
+    ├── all_models_strategy_aggregate.csv
+    ├── all_models_round_metrics.csv
+    ├── all_models_query_log.csv
+    │
+    ├── version_B_all_models_summary.csv
+    ├── version_B_all_models_per_class.csv
+    │
+    ├── experiment_config.json
+    ├── fairness_initial_set_audit.csv
+    ├── fairness_random_query_audit.csv
+    ├── preprocessed_feature_names.csv
+    └── FINAL_data_limitation.txt
 ```
 
 ## Environment Setup
