@@ -1,0 +1,16 @@
+filename_attack_family,rows,source_files,labels,n_labels
+synflood,8649,3,"ackflood,syn,synflood",3
+ackflood,4747,4,"ackflood,ackpflood",2
+tcpall,4070,2,"tcp,tcpall",2
+tcpfin1,3628,2,"tcp,tcpfin1",2
+fraggle,5000,5,fraggle,1
+icmpflood,5000,3,icmpflood,1
+pingofdeath,5000,3,pingofdeath,1
+smurf,5000,4,smurf,1
+winnuke,5000,4,winnuke,1
+icmpbig,4833,3,icmpbig,1
+routeip,4674,2,routeip,1
+teardrop,2370,1,teardrop,1
+land,2322,1,land,1
+tcpsynfin0,1262,1,tcp,1
+tcp,1246,1,tcp,1

@@ -1,0 +1,7 @@
+source_file,rows,vendors,n_labels,labels,filename_family,observed_attack_labels,review_flag
+ABB_LONG_synflood_faster_1_01-.csv,1267,ABB,2,"ackflood,benign",synflood,ackflood,REVIEW_FILENAME_LABEL_ONTOLOGY
+Schneider_ackflood_fast_0710-.csv,997,Schneider,1,ackpflood,ackflood,ackpflood,REVIEW_FILENAME_LABEL_ONTOLOGY
+Schneider_synflood_fast_0710.csv,2400,Schneider,2,"benign,syn",synflood,syn,REVIEW_FILENAME_LABEL_ONTOLOGY
+Schneider_tcpall0_0710.csv,1252,Schneider,2,"benign,tcp",tcpall,tcp,REVIEW_FILENAME_LABEL_ONTOLOGY
+Schneider_tcpfin1_0710.csv,1244,Schneider,2,"benign,tcp",tcpfin1,tcp,REVIEW_FILENAME_LABEL_ONTOLOGY
+Schneider_tcpsynfin0_0710.csv,1263,Schneider,2,"benign,tcp",tcpsynfin0,tcp,REVIEW_FILENAME_LABEL_ONTOLOGY

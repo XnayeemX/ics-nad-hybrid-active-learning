@@ -1,0 +1,11 @@
+attack_type,development,external_test
+ackflood,3782,1218
+benign,4005,995
+fraggle,4081,919
+icmpbig,2448,2385
+icmpflood,3334,1666
+pingofdeath,3334,1666
+routeip,2376,2298
+smurf,4034,966
+tcp,3757,1243
+winnuke,4128,872

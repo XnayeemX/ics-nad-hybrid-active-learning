@@ -1,0 +1,2 @@
+ackflood_rows,ackpflood_rows,ambiguous_core_groups,ackflood_rows_in_ambiguous_groups,ackpflood_rows_in_ambiguous_groups,ackpflood_precision_if_all_ambiguous_predicted_ackpflood,ackflood_recall_under_that_rule,pair_macro_f1_under_that_rule
+5000,997,1,1322,997,0.42992669253988786,0.7356,0.7244938256022815

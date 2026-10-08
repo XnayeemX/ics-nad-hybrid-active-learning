@@ -1,0 +1,17 @@
+{
+  "rows": 67801,
+  "columns_original_plus_engineered": 114,
+  "classes": 17,
+  "core_features": 48,
+  "behavior_features": 86,
+  "unique_core_signatures": 10001,
+  "unique_behavior_signatures": 61304,
+  "rows_in_core_cross_label_conflicts": 30214,
+  "provenance_files_flagged_for_review": 6,
+  "version_B_development_files": 31,
+  "version_B_external_files": 17,
+  "parquet_status": {
+    "ics_nad_model_table_v3.parquet": "written",
+    "ics_nad_full_polished_v3.parquet": "written"
+  }
+}

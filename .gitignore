@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.env
+*.key
+*.pem
+
+# Temporary / cache
+*.tmp
+*.log
+.cache/
+.pytest_cache/
+
+# Large/intermediate data not part of this reproducibility package
+data/raw/
+data/intermediate/
+data/*.csv
+data/ics_nad_full_polished_v3.parquet
+
+# Keep the final experiment dataset
+!data/ics_nad_model_table_v3.parquet
+
+# Generated experiment outputs
+results/combined_hybrid_open_set_mlp_rf_xgb/
+results/combined_hybrid_open_set_mlp_rf_xgb_results.zip
+
+# Optional serialized model artifacts if hosted elsewhere
+models/*.pt
+models/*.pth
+models/*.pkl
+models/*.joblib
+models/*.json
+models/*.ubj
+models/*.zip
