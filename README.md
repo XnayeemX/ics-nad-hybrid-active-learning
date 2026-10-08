@@ -51,33 +51,30 @@ The Hybrid strategy combines:
 | Metric | MLP | Random Forest | XGBoost |
 |---|---:|---:|---:|
 | UADR | 1.000 | 1.000 | 1.000 |
-| Labels to discover all hidden | 25.3 | 57.3 | 102.3 |
-| Unknown Query Yield | 27.1% | 31.7% | 33.7% |
+| Labels to discover all hidden | 25.3 | 57.3 | 129.0 |
+| Unknown Query Yield | 27.1% | 31.7% | 33.0% |
 | Macro-F1 | 0.886 | 0.994 | 0.995 |
 | Accuracy | 0.894 | 0.993 | 0.994 |
 | Hidden Macro Recall | 0.999 | 0.998 | 1.000 |
 | Teardrop Recall | 0.996 | 1.000 | 1.000 |
 | ACKPFlood Precision | 0.847 | 1.000 | 1.000 |
 | ACKPFlood Recall | 1.000 | 0.993 | 1.000 |
-| ACKFlood Recall | 0.921 | 0.985 | 0.987 |
-| ACK Pair Macro-F1 | 0.933 | 0.991 | 0.995 |
-| Representation Redundancy | 0.171 | 0.178 | 0.680 |
-| Group Redundancy | 0.019 | 0.021 | 0.000 |
+| ACKFlood Recall | 0.921 | 0.985 | 0.988 |
+| ACK Pair Macro-F1 | 0.933 | 0.991 | 0.996 |
+| Representation Redundancy | 0.171 | 0.178 | 0.677 |
+| Group Redundancy | 0.019 | 0.021 | 0.003 |
 | Binary F1 | 0.995 | 0.998 | 0.998 |
 | External Macro-F1 | 0.842 | 0.889 | 0.884 |
 | Full Discovery Success | 3/3 | 3/3 | 3/3 |
 
-### Interpretation
 
-- **MLP**: fastest hidden-attack discovery and lowest model-specific
-  representation redundancy.
-- **Random Forest**: strongest overall balance between classification,
-  discovery efficiency, low redundancy, and external generalization.
-- **XGBoost**: strongest final classifier, but its Hybrid representation
-  redundancy is higher and full discovery requires more labels.
+## Interpretation
 
-Representation redundancy should be interpreted as a model-specific diversity
-indicator because each model uses a different internal representation space.
+- **MLP:** Fastest hidden-attack discovery and lowest model-specific representation redundancy.
+- **Random Forest:** Strongest overall balance between classification performance, discovery efficiency, low redundancy, and external generalization.
+- **XGBoost:** Strongest final classifier and highest unknown-query yield, but requires more labels for full hidden-class discovery and has substantially higher model-specific representation redundancy.
+
+Representation redundancy should be interpreted as a model-specific diversity indicator because each model uses a different internal representation space.
 
 ## Repository Structure
 
@@ -209,9 +206,9 @@ LABEL_BUDGET = 300
 QUERY_BATCH_SIZE = 25
 ```
 
-The notebook performs all 27 Active Learning runs and the Version-B external
-evaluation. Generated CSV files, plots, audit copies, and the final ZIP of
-results are written to:
+The notebook performs all 27 Active Learning runs and the Version-B external evaluation.
+
+A fresh execution writes the complete generated output to:
 
 ```text
 results/combined_hybrid_open_set_mlp_rf_xgb/
@@ -255,12 +252,19 @@ industrial control systems**
 Dataset access:
 https://www.scidb.cn/en/detail?dataSetId=380298d0714740dd91413b5db6305dfd
 
+
+Your **Trained Models** wording is also fine, but I would use this slightly stronger wording in the root README:
+
+```markdown
 ## Trained Models
 
-Serialized pretrained model binaries are not currently stored in this
-repository. The complete training pipeline is provided in the final notebook,
-allowing the MLP, Random Forest, and XGBoost models to be regenerated using
-the documented experiment configuration.
+Serialized pretrained model binaries are not currently distributed with this repository.
+
+The complete training, Active Learning, and evaluation pipeline is provided in:
+
+```text
+notebooks/01_hybrid_active_learning_comparison.ipynb
+```
 
 Model artifacts, if published separately, will be linked in
 `models/README.md`.
