@@ -43,6 +43,4 @@ Expected outputs include:
 | Binary F1 | 0.995 | 0.998 | 0.998 |
 | External Macro-F1 | 0.842 | 0.889 | 0.884 |
 
-Do not manually edit generated experiment outputs and then present them as
-reproduced results. Re-run the notebook whenever the experiment configuration
-changes.
+
