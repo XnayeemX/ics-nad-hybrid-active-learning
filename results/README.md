@@ -32,28 +32,7 @@ The Hybrid acquisition score used:
 - Density weight: 0.20
 - Strict cosine-similarity threshold: 0.60
 
-## Final Hybrid Results
 
-The table below reports the mean ± standard deviation across the three experiment seeds.
-
-| Metric | MLP | Random Forest | XGBoost |
-|---|---:|---:|---:|
-| UADR | 1.000 ± 0.000 | 1.000 ± 0.000 | 1.000 ± 0.000 |
-| Full Discovery Success | 3/3 | 3/3 | 3/3 |
-| Labels to Full Discovery | 25.333 ± 30.892 | 57.333 ± 15.044 | 129.000 ± 8.660 |
-| Unknown Query Yield | 0.271 ± 0.034 | 0.317 ± 0.009 | 0.330 ± 0.003 |
-| Accuracy | 0.894 ± 0.033 | 0.993 ± 0.001 | 0.994 ± 0.000 |
-| Macro-F1 | 0.886 ± 0.032 | 0.994 ± 0.001 | 0.995 ± 0.000 |
-| Hidden Macro Recall | 0.999 ± 0.000 | 0.998 ± 0.003 | 1.000 ± 0.000 |
-| Teardrop Recall | 0.996 ± 0.000 | 1.000 ± 0.000 | 1.000 ± 0.000 |
-| ACKPFlood Precision | 0.847 ± 0.130 | 1.000 ± 0.000 | 1.000 ± 0.000 |
-| ACKPFlood Recall | 1.000 ± 0.000 | 0.993 ± 0.008 | 1.000 ± 0.000 |
-| ACKFlood Recall | 0.921 ± 0.037 | 0.985 ± 0.002 | 0.988 ± 0.002 |
-| ACK Pair Macro-F1 | 0.933 ± 0.048 | 0.991 ± 0.003 | 0.996 ± 0.001 |
-| Representation Redundancy | 0.171 ± 0.005 | 0.178 ± 0.005 | 0.677 ± 0.005 |
-| Group Redundancy | 0.019 ± 0.021 | 0.021 ± 0.008 | 0.003 ± 0.006 |
-| Binary F1 | 0.995 ± 0.000 | 0.998 ± 0.001 | 0.998 ± 0.000 |
-| External Macro-F1 | 0.842 ± 0.054 | 0.889 ± 0.001 | 0.884 ± 0.000 |
 
 ## Main Findings
 
