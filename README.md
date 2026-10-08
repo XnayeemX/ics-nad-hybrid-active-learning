@@ -46,27 +46,6 @@ The Hybrid strategy combines:
 - Total main Active Learning runs:
   - 3 models × 3 strategies × 3 seeds = 27 runs
 
-## Main Hybrid Results
-
-| Metric | MLP | Random Forest | XGBoost |
-|---|---:|---:|---:|
-| UADR | 1.000 | 1.000 | 1.000 |
-| Labels to discover all hidden | 25.3 | 57.3 | 129.0 |
-| Unknown Query Yield | 27.1% | 31.7% | 33.0% |
-| Macro-F1 | 0.886 | 0.994 | 0.995 |
-| Accuracy | 0.894 | 0.993 | 0.994 |
-| Hidden Macro Recall | 0.999 | 0.998 | 1.000 |
-| Teardrop Recall | 0.996 | 1.000 | 1.000 |
-| ACKPFlood Precision | 0.847 | 1.000 | 1.000 |
-| ACKPFlood Recall | 1.000 | 0.993 | 1.000 |
-| ACKFlood Recall | 0.921 | 0.985 | 0.988 |
-| ACK Pair Macro-F1 | 0.933 | 0.991 | 0.996 |
-| Representation Redundancy | 0.171 | 0.178 | 0.677 |
-| Group Redundancy | 0.019 | 0.021 | 0.003 |
-| Binary F1 | 0.995 | 0.998 | 0.998 |
-| External Macro-F1 | 0.842 | 0.889 | 0.884 |
-| Full Discovery Success | 3/3 | 3/3 | 3/3 |
-
 
 ## Interpretation
 
