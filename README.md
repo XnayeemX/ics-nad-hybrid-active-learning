@@ -127,7 +127,7 @@ Python 3.10+ is recommended.
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/XnayeemX/ics-nad-hybrid-active-learning.git
 cd ics-nad-hybrid-active-learning
 ```
 
@@ -222,14 +222,25 @@ data/ics_nad_model_table_v3.parquet
 It contains the polished experiment table used by the final notebook. See
 `data/README.md` for the original dataset access information and data notes.
 
+### Original Dataset
+
+This study uses the ICS-NAD dataset:
+
+**A network attack detection dataset collected from multiple real-world
+industrial control systems**
+
+Dataset access:
+https://www.scidb.cn/en/detail?dataSetId=380298d0714740dd91413b5db6305dfd
+
 ## Trained Models
 
-The files supplied for this repository did not contain serialized final model
-binaries. The complete training and Active Learning code is included and
-reproduces the final trained estimators during notebook execution.
+Serialized pretrained model binaries are not currently stored in this
+repository. The complete training pipeline is provided in the final notebook,
+allowing the MLP, Random Forest, and XGBoost models to be regenerated using
+the documented experiment configuration.
 
-See `models/README.md` for the model-artifact policy and how to add exported
-model files if they are later published separately.
+Model artifacts, if published separately, will be linked in
+`models/README.md`.
 
 ## Reports
 
