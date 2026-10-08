@@ -257,9 +257,6 @@ hidden classes from this dataset alone.
 - Version-B provides a source-file-disjoint external diagnostic for classes
   where such a split is supported by the available source captures.
 
-## Citation / Paper
-
-Add the final paper citation here after publication/acceptance.
 
 ## License and Dataset Terms
 
